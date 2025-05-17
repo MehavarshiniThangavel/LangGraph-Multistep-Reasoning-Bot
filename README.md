@@ -1,4 +1,5 @@
-Multi-Step Reasoning Bot
+*Multi-Step Reasoning Bot*
+
 A multi-step reasoning chatbot using LangGraph and OpenAI GPT-3.5 Turbo that mimics human problem-solving by breaking down question answering into sequential reasoning steps.
 
 Overview: 
@@ -15,6 +16,7 @@ This structured flow leads to more accurate and insightful answers by clearly se
 
 
 Real-Time Example
+
 User Input:
 
 “What are the health benefits of green tea?”
@@ -35,26 +37,19 @@ The bot responds:
 Project Structure
  
 .
-├──  main.py                # Main program defining the multi-step graph
+├──  main.py                
 ├──  steps/
-│    ├── step1_thought.py   # Generates reasoning about the question
-│    ├── step2_research.py  # Gathers or simulates research info
-│   └── step3_answer.py    # Produces the final answer
+│    ├── step1_thought.py   
+│    ├── step2_research.py 
+│   └── step3_answer.py    
 ├── requirements.txt
-└── .env                   # Environment variables (OpenAI API key)
+└── .env
 
-python -m venv .venv
-source .venv/bin/activate    # On Windows: .venv\Scripts\activate
-Install dependencies:
+
 
 
 
 Enter your question when prompted, and the bot will reply after stepwise reasoning.
 
-Dependencies
-Python 3.8 or higher
-langgraph
-langchain
-openai
-python-dotenv
 
+Thankyou
